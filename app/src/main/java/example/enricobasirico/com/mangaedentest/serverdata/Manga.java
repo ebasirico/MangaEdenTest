@@ -1,92 +1,99 @@
 
 package example.enricobasirico.com.mangaedentest.serverdata;
 
-import java.io.Serializable;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class Manga {
 
-    @SerializedName("end")
+    @SerializedName("a")
     @Expose
-    private Integer end;
-    @SerializedName("manga")
+    private String a;
+    @SerializedName("c")
     @Expose
-    private List<Manga_> manga = null;
-    @SerializedName("page")
+    private List<String> c = null;
+    @SerializedName("h")
     @Expose
-    private Integer page;
-    @SerializedName("start")
+    private Integer h;
+    @SerializedName("i")
     @Expose
-    private Integer start;
-    @SerializedName("total")
+    private String i;
+    @SerializedName("im")
     @Expose
-    private Integer total;
+    private String im;
+    @SerializedName("ld")
+    @Expose
+    private Double ld;
+    @SerializedName("s")
+    @Expose
+    private Integer s;
+    @SerializedName("t")
+    @Expose
+    private String t;
 
-    public Integer getEnd() {
-        return end;
+    public String getA() {
+        return a;
     }
 
-    public void setEnd(Integer end) {
-        this.end = end;
+    public void setA(String a) {
+        this.a = a;
     }
 
-    public List<Manga_> getManga() {
-        return manga;
+    public List<String> getC() {
+        return c;
     }
 
-    public void setManga(List<Manga_> manga) {
-        this.manga = manga;
+    public void setC(List<String> c) {
+        this.c = c;
     }
 
-    public Integer getPage() {
-        return page;
+    public Integer getH() {
+        return h;
     }
 
-    public void setPage(Integer page) {
-        this.page = page;
+    public void setH(Integer h) {
+        this.h = h;
     }
 
-    public Integer getStart() {
-        return start;
+    public String getI() {
+        return i;
     }
 
-    public void setStart(Integer start) {
-        this.start = start;
+    public void setI(String i) {
+        this.i = i;
     }
 
-    public Integer getTotal() {
-        return total;
+    public String getIm() {
+        return im;
     }
 
-    public void setTotal(Integer total) {
-        this.total = total;
+    public void setIm(String im) {
+        this.im = im;
     }
 
-    @Override
-    public String toString() {
-        return new ToStringBuilder(this).append("end", end).append("manga", manga).append("page", page).append("start", start).append("total", total).toString();
+    public Double getLd() {
+        return ld;
     }
 
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder().append(total).append(start).append(page).append(manga).append(end).toHashCode();
+    public void setLd(Double ld) {
+        this.ld = ld;
     }
 
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof Manga) == false) {
-            return false;
-        }
-        Manga rhs = ((Manga) other);
-        return new EqualsBuilder().append(total, rhs.total).append(start, rhs.start).append(page, rhs.page).append(manga, rhs.manga).append(end, rhs.end).isEquals();
+    public Integer getS() {
+        return s;
+    }
+
+    public void setS(Integer s) {
+        this.s = s;
+    }
+
+    public String getT() {
+        return t;
+    }
+
+    public void setT(String t) {
+        this.t = t;
     }
 
 }
