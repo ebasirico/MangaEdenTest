@@ -9,19 +9,19 @@ public class Manga {
 
     @SerializedName("a")
     @Expose
-    private String a;
+    private String name;
     @SerializedName("c")
     @Expose
-    private List<String> c = null;
+    private List<String> genere = null;
     @SerializedName("h")
     @Expose
     private Integer h;
     @SerializedName("i")
     @Expose
-    private String i;
+    private String id;
     @SerializedName("im")
     @Expose
-    private String im;
+    private String copertina;
     @SerializedName("ld")
     @Expose
     private Double ld;
@@ -30,22 +30,22 @@ public class Manga {
     private Integer s;
     @SerializedName("t")
     @Expose
-    private String t;
+    private String titolo;
 
-    public String getA() {
-        return a;
+    public String getName() {
+        return name;
     }
 
-    public void setA(String a) {
-        this.a = a;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public List<String> getC() {
-        return c;
+    public List<String> getGenere() {
+        return genere;
     }
 
-    public void setC(List<String> c) {
-        this.c = c;
+    public void setGenere(List<String> genere) {
+        this.genere = genere;
     }
 
     public Integer getH() {
@@ -56,20 +56,20 @@ public class Manga {
         this.h = h;
     }
 
-    public String getI() {
-        return i;
+    public String getId() {
+        return id;
     }
 
-    public void setI(String i) {
-        this.i = i;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getIm() {
-        return im;
+    public String getCopertina() {
+        return copertina;
     }
 
-    public void setIm(String im) {
-        this.im = im;
+    public void setCopertina(String copertina) {
+        this.copertina = copertina;
     }
 
     public Double getLd() {
@@ -88,12 +88,12 @@ public class Manga {
         this.s = s;
     }
 
-    public String getT() {
-        return t;
+    public String getTitolo() {
+        return titolo;
     }
 
-    public void setT(String t) {
-        this.t = t;
+    public void setTitolo(String t) {
+        this.titolo = t;
     }
 
 }
